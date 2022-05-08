@@ -1,0 +1,55 @@
+print("Python Calculadora\n")
+print(" 1- Soma\n 2- Subtração\n 3- Multiplicação\n 4- Divisão\n")
+opções = input("digite uma das opções: 1/2/3/4:\n ")
+while opções <"10" :
+    if opções >="10":
+        break
+        print("Não exite está opção, tente outra")
+    else:
+        pass
+    if opções== "1":    
+        num1= int(input("Primeiro número: ",))
+        num2= int(input("Segundo número: ", ))
+        print("Soma", num1 + num2)
+        opções = input("digite uma das opções: 1/2/3/4: ")
+    if opções== "2":
+        num1= int(input("Primeiro número: ",))
+        num2= int(input("Segundo número: ", ))
+        print("Subtração", num1 - num2)
+        opções = input("digite uma das opções: 1/2/3/4: ")
+    if opções== "3":
+        num1= int(input("Primeiro número: ",))
+        num2= int(input("Segundo número: ", ))
+        print("Multiplicação", num1 * num2)
+        opções = input("digite uma das opções: 1/2/3/4: ")        
+    if opções== "4":
+        num1= int(input("Primeiro número: ",))
+        num2= int(input("Segundo número: ", ))
+        print("Divisão", num1 // num2)
+        opções = input("digite uma das opções: 1/2/3/4: ")
+
+                #Fiz essa mais simples e que era exigida pelo curso#
+
+def add(x,y):
+    return x+y
+def subtract(x,y):
+    return x-y
+def multiply(x,y):
+    return x*y
+def divide(x,y):
+    return x//y
+
+
+print("Python Calculadora\n")
+print(" 1- Soma\n 2- Subtração\n 3- Multiplicação\n 4- Divisão\n")
+opções = input("digite uma das opções: 1/2/3/4:\n ")
+num1= int(input("Primeiro número: ",))
+num2= int(input("Segundo número: ", ))
+if opções== "1":    
+    print("Soma", add(num1,num2))
+if opções== "2":    
+    print("Subtração", subtract(num1,num2))
+if opções== "3":    
+    print("Soma", multiply(num1,num2))
+if opções== "4":    
+    print("Soma", divide(num1,num2))
